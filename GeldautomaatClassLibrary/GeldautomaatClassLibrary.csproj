@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>Z:\Documents\school\leerjaar 3\Level 9\L9-1\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

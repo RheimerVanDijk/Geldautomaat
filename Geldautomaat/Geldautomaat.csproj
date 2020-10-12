@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F27D768-013B-4D2D-AC53-731E427CB14F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Geldautomaat</RootNamespace>
+    <AssemblyName>Geldautomaat</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\school\leerjaar 3\Level 9\L9-1\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\userDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\userDeposit.Designer.cs">
+      <DependentUpon>userDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\userHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\userHistory.Designer.cs">
+      <DependentUpon>userHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\userSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\userSaldo.Designer.cs">
+      <DependentUpon>userSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\userWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\userWithdraw.Designer.cs">
+      <DependentUpon>userWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\userWithdrawCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\userWithdrawCustom.Designer.cs">
+      <DependentUpon>userWithdrawCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="msgForms\successDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="msgForms\successDeposit.Designer.cs">
+      <DependentUpon>successDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="msgForms\withdrawBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="msgForms\withdrawBill.Designer.cs">
+      <DependentUpon>withdrawBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="msgForms\withdrawDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="msgForms\withdrawDisplay.Designer.cs">
+      <DependentUpon>withdrawDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\userDeposit.resx">
+      <DependentUpon>userDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\userHistory.resx">
+      <DependentUpon>userHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\userSaldo.resx">
+      <DependentUpon>userSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\userWithdraw.resx">
+      <DependentUpon>userWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\userWithdrawCustom.resx">
+      <DependentUpon>userWithdrawCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msgForms\successDeposit.resx">
+      <DependentUpon>successDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msgForms\withdrawBill.resx">
+      <DependentUpon>withdrawBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msgForms\withdrawDisplay.resx">
+      <DependentUpon>withdrawDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeldautomaatClassLibrary\GeldautomaatClassLibrary.csproj">
+      <Project>{07f60df6-402a-457b-a486-975cd8579fc4}</Project>
+      <Name>GeldautomaatClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
