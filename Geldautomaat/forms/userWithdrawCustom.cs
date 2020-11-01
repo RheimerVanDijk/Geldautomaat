@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Geldautomaat.msgForms;
 using GeldautomaatClassLibrary;
 
 namespace Geldautomaat.forms
@@ -29,8 +30,40 @@ namespace Geldautomaat.forms
                 this.Hide();
             } else
             {
-                userActions.userWithdraw(txbWithdrawAmount.Text);
+                passTrough(userActions.userWithdraw(txbWithdrawAmount.Text));
             }
+        }
+
+        private void passTrough(string msg)
+        {
+            if (msg == "bill")
+            {
+                var withdrawBill = new withdrawBill();
+                withdrawBill.Show();
+                this.Hide();
+            }
+            else if (msg == "noMoney")
+            {
+                userActions.setWithdrawMsg("Niet genoeg geld op je rekening.");
+                toWithdrawDisplay();
+            }
+            else if (msg == "toMany")
+            {
+                userActions.setWithdrawMsg("U heeft uw max van 3 opnamens behaald deze dag.");
+                toWithdrawDisplay();
+            }
+            else if (msg == "error")
+            {
+                userActions.setWithdrawMsg("OHNEE ER IS IETS FOUT.");
+                toWithdrawDisplay();
+            }
+        }
+
+        private void toWithdrawDisplay()
+        {
+            var withdrawDisplay = new withdrawDisplay();
+            withdrawDisplay.Show();
+            this.Hide();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

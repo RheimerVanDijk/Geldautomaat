@@ -22,7 +22,7 @@ namespace Geldautomaat.forms
 
         private void userSaldo_Load(object sender, EventArgs e)
         {
-            lblSaldo.Text = userActions.returnSaldo();
+            lblSaldo.Text = "Uw huidige saldo is: €" + userActions.returnSaldo();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -33,5 +33,11 @@ namespace Geldautomaat.forms
 
         }
 
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            var UserDashboard = new UserDashboard();
+            UserDashboard.Show();
+            this.Hide();
+        }
     }
 }

@@ -99,5 +99,10 @@ namespace Geldautomaat.forms
             userWithdrawCustom.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

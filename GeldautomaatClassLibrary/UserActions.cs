@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Windows.Forms;
@@ -54,7 +55,7 @@ namespace GeldautomaatClassLibrary
 
         public string welcomeMessage()
         {
-            return "Welkom " + UserInfo.userName + ", kies een van de opties";
+            return "Welkom " + UserInfo.userName + ", kies een van de opties.";
         }
 
         public string returnSaldo()
@@ -87,6 +88,7 @@ namespace GeldautomaatClassLibrary
         {
             try
             {
+  
                 string currentBalance = returnSaldo();
                 double newBalance = Convert.ToDouble(amount) + Convert.ToDouble(currentBalance);
                 CloseConnection();
@@ -131,6 +133,7 @@ namespace GeldautomaatClassLibrary
 
                 while (rdr.Read())
                 {
+                    DateTime dateAndTime = DateTime.Parse(rdr["created_at"].ToString());
                     string type = "";
                     if (rdr["type"].ToString() == "deposit")
                     {
@@ -140,8 +143,8 @@ namespace GeldautomaatClassLibrary
                         type = "-";
                     }
 
-                    table.Rows.Add(rdr["created_at"], rdr["type"], type + "$" + rdr["amount"]);
-                    
+                    table.Rows.Add(dateAndTime.ToString("dd/MM/yyyy"), rdr["type"], type + "€" + rdr["amount"]);
+                   
                 }
                 rdr.Close();
                 CloseConnection();
@@ -158,7 +161,6 @@ namespace GeldautomaatClassLibrary
             {
                 if (userValidation.validateWithdrawHistory())
                 {
-                    Console.WriteLine("LESS");
                     if (userValidation.validateAffordable(amount))
                     {
                         double newBalance = userValidation.newAmount(amount);
@@ -180,16 +182,13 @@ namespace GeldautomaatClassLibrary
                         CloseConnection();
                         CloseConnection();
 
-                        Console.WriteLine("HET WERKT BICTHES");
                         return "bill";
                     } else
                     {
-                        Console.WriteLine("NOOO :(");
                         return "noMoney";
                     }
                 } else
                 {
-                    Console.WriteLine("MORE");
                     return "toMany";
                 }
 
