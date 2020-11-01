@@ -23,7 +23,7 @@ Or run the project as shown above and open the compiled .exe file (**projectFold
 * role 1: admin
 
 #### Account information:
-**Application automatically generates a pincode you can change this in the database**]
+**Application automatically generates a pincode you can change this in the database**
 
 There no way at this point in time to view the pincode to login with a user of a admin account. 
 
