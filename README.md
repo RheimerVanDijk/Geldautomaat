@@ -18,8 +18,8 @@ Or run the project as shown above and open the compiled .exe file (**projectFold
 
 ## INPORTANT INTO
 Roles:
-  role 0: normal user
-  role 1: admin
+* role 0: normal user
+* role 1: admin
 
 **Application automatically generates a pincode you can change this in the database**
 There no way at this point in time to view the pincode to login with a user of a admin account. 
@@ -28,5 +28,5 @@ go to the database add a users and convert a pincode [here](https://md5decrypt.n
 You can decrypt the pincode at the above povided website to login with a user or a admin account.
 
 Login cridentials:
-  User: account number and pincode
-  Admin: email and pincode
+* User: account number and pincode
+* Admin: email and pincode
