@@ -42,22 +42,6 @@ namespace AdminPanel.forms
 
             userManagment.FillEditUser(recordID, email, sex, birthday, bsn, firstName, lastName, address, postcode, plaats);
             
-            
-               // DateTime value = DateTime.Parse(result["birthday"].ToString());
-
-
-                //txbEmail.Text = result["email"].ToString();
-                //txbSex.Text = result["sex"].ToString();
-                //dtpBirthDay.Value = DateTime.Parse(value.ToString("yyyy/MM/dd"));
-                //txbBSN.Text = result["bsn_number"].ToString();
-                //txbFirstName.Text = result["first_name"].ToString();
-                //txbLastName.Text = result["last_name"].ToString();
-                //txbAdress.Text = result["address"].ToString();
-                //txbPostcode.Text = result["zipcode"].ToString();
-                //txbPlaats.Text = result["town"].ToString();
-
-
-                //result.Close();
         }
 
         private void btnSave_Click(object sender, EventArgs e)

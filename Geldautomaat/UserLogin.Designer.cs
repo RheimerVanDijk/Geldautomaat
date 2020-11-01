@@ -32,9 +32,9 @@
             this.txbAccountNr = new System.Windows.Forms.TextBox();
             this.txbPincode = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.roundButton6 = new Geldautomaat.RoundButton();
             this.roundButton7 = new Geldautomaat.RoundButton();
             this.roundButton8 = new Geldautomaat.RoundButton();
@@ -63,7 +63,6 @@
             this.txbAccountNr.Name = "txbAccountNr";
             this.txbAccountNr.Size = new System.Drawing.Size(256, 20);
             this.txbAccountNr.TabIndex = 1;
-            this.txbAccountNr.Text = "98114938";
             // 
             // txbPincode
             // 
@@ -72,7 +71,6 @@
             this.txbPincode.PasswordChar = '*';
             this.txbPincode.Size = new System.Drawing.Size(256, 20);
             this.txbPincode.TabIndex = 2;
-            this.txbPincode.Text = "6380";
             // 
             // panel1
             // 
@@ -88,15 +86,14 @@
             this.panel1.Size = new System.Drawing.Size(527, 357);
             this.panel1.TabIndex = 5;
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Login";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(125, 141);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Pincode:";
             // 
             // label3
             // 
@@ -107,14 +104,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Rekening nummer:";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(125, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Pincode:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Login";
             // 
             // roundButton6
             // 

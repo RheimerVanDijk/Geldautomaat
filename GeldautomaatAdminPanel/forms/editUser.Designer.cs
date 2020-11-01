@@ -43,12 +43,21 @@
             this.btnUnblockUser = new System.Windows.Forms.Button();
             this.btnRemoveUser = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dtpBirthDay
             // 
             this.dtpBirthDay.CustomFormat = "yyyy/MM/dd";
-            this.dtpBirthDay.Location = new System.Drawing.Point(36, 79);
+            this.dtpBirthDay.Location = new System.Drawing.Point(115, 99);
             this.dtpBirthDay.Name = "dtpBirthDay";
             this.dtpBirthDay.Size = new System.Drawing.Size(100, 20);
             this.dtpBirthDay.TabIndex = 19;
@@ -56,63 +65,63 @@
             // 
             // txbPlaats
             // 
-            this.txbPlaats.Location = new System.Drawing.Point(36, 195);
+            this.txbPlaats.Location = new System.Drawing.Point(115, 246);
             this.txbPlaats.Name = "txbPlaats";
-            this.txbPlaats.Size = new System.Drawing.Size(100, 20);
+            this.txbPlaats.Size = new System.Drawing.Size(169, 20);
             this.txbPlaats.TabIndex = 18;
             // 
             // txbPostcode
             // 
-            this.txbPostcode.Location = new System.Drawing.Point(210, 169);
+            this.txbPostcode.Location = new System.Drawing.Point(358, 201);
             this.txbPostcode.Name = "txbPostcode";
             this.txbPostcode.Size = new System.Drawing.Size(100, 20);
             this.txbPostcode.TabIndex = 17;
             // 
             // txbAdress
             // 
-            this.txbAdress.Location = new System.Drawing.Point(36, 169);
+            this.txbAdress.Location = new System.Drawing.Point(115, 197);
             this.txbAdress.Name = "txbAdress";
-            this.txbAdress.Size = new System.Drawing.Size(100, 20);
+            this.txbAdress.Size = new System.Drawing.Size(169, 20);
             this.txbAdress.TabIndex = 16;
             // 
             // txbLastName
             // 
-            this.txbLastName.Location = new System.Drawing.Point(210, 105);
+            this.txbLastName.Location = new System.Drawing.Point(358, 144);
             this.txbLastName.Name = "txbLastName";
-            this.txbLastName.Size = new System.Drawing.Size(100, 20);
+            this.txbLastName.Size = new System.Drawing.Size(183, 20);
             this.txbLastName.TabIndex = 15;
             // 
             // txbBSN
             // 
-            this.txbBSN.Location = new System.Drawing.Point(210, 79);
+            this.txbBSN.Location = new System.Drawing.Point(358, 102);
             this.txbBSN.Name = "txbBSN";
-            this.txbBSN.Size = new System.Drawing.Size(100, 20);
+            this.txbBSN.Size = new System.Drawing.Size(183, 20);
             this.txbBSN.TabIndex = 14;
             // 
             // txbSex
             // 
-            this.txbSex.Location = new System.Drawing.Point(210, 53);
+            this.txbSex.Location = new System.Drawing.Point(358, 51);
             this.txbSex.Name = "txbSex";
             this.txbSex.Size = new System.Drawing.Size(100, 20);
             this.txbSex.TabIndex = 13;
             // 
             // txbFirstName
             // 
-            this.txbFirstName.Location = new System.Drawing.Point(36, 105);
+            this.txbFirstName.Location = new System.Drawing.Point(115, 144);
             this.txbFirstName.Name = "txbFirstName";
-            this.txbFirstName.Size = new System.Drawing.Size(100, 20);
+            this.txbFirstName.Size = new System.Drawing.Size(169, 20);
             this.txbFirstName.TabIndex = 12;
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(36, 53);
+            this.txbEmail.Location = new System.Drawing.Point(115, 51);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(100, 20);
+            this.txbEmail.Size = new System.Drawing.Size(169, 20);
             this.txbEmail.TabIndex = 11;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(98, 271);
+            this.btnSave.Location = new System.Drawing.Point(115, 272);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(175, 23);
             this.btnSave.TabIndex = 20;
@@ -122,7 +131,7 @@
             // 
             // btnResetPin
             // 
-            this.btnResetPin.Location = new System.Drawing.Point(98, 300);
+            this.btnResetPin.Location = new System.Drawing.Point(115, 330);
             this.btnResetPin.Name = "btnResetPin";
             this.btnResetPin.Size = new System.Drawing.Size(175, 27);
             this.btnResetPin.TabIndex = 21;
@@ -132,7 +141,7 @@
             // 
             // btnBlockUser
             // 
-            this.btnBlockUser.Location = new System.Drawing.Point(98, 333);
+            this.btnBlockUser.Location = new System.Drawing.Point(358, 328);
             this.btnBlockUser.Name = "btnBlockUser";
             this.btnBlockUser.Size = new System.Drawing.Size(175, 29);
             this.btnBlockUser.TabIndex = 22;
@@ -142,7 +151,7 @@
             // 
             // btnUnblockUser
             // 
-            this.btnUnblockUser.Location = new System.Drawing.Point(98, 368);
+            this.btnUnblockUser.Location = new System.Drawing.Point(358, 363);
             this.btnUnblockUser.Name = "btnUnblockUser";
             this.btnUnblockUser.Size = new System.Drawing.Size(175, 28);
             this.btnUnblockUser.TabIndex = 23;
@@ -152,7 +161,7 @@
             // 
             // btnRemoveUser
             // 
-            this.btnRemoveUser.Location = new System.Drawing.Point(98, 402);
+            this.btnRemoveUser.Location = new System.Drawing.Point(596, 331);
             this.btnRemoveUser.Name = "btnRemoveUser";
             this.btnRemoveUser.Size = new System.Drawing.Size(175, 26);
             this.btnRemoveUser.TabIndex = 24;
@@ -162,7 +171,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(475, 27);
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 25;
@@ -170,11 +179,101 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(112, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Email:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(355, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Geslacht: (Man, Vrouw)";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(112, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Geboorte datum";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(355, 83);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "BSN nummer";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(112, 128);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Voornaam:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(355, 128);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Achternaam:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(112, 230);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Woonplaats:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(355, 184);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Postcode:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(112, 184);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 13);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Address:";
+            // 
             // editUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRemoveUser);
             this.Controls.Add(this.btnUnblockUser);
@@ -214,5 +313,14 @@
         private System.Windows.Forms.Button btnUnblockUser;
         private System.Windows.Forms.Button btnRemoveUser;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
